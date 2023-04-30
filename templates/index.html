@@ -8,9 +8,9 @@
             <link rel="shortcut icon" href="favicon.ico"/> 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
-            <link href="css/fontello.css" rel="stylesheet" type="text/css"/>
-            <link href="css/animate.css" rel="stylesheet" type="text/css"/>     
-            <link href="css/style.css" rel="stylesheet" type="text/css"/>     
+            <link href="{{ url_for('static', filename = 'css/fontello.css') }}" rel="stylesheet" type="text/css"/>
+            <link href="{{ url_for('static', filename = 'css/animate.css') }}" rel="stylesheet" type="text/css"/>     
+            <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet" type="text/css"/>     
       <title>DIONA</title>
   </head>
   
@@ -46,7 +46,7 @@
 			    <i class="vertical-align"></i>
 			</button>
 			<a class="navbar-brand vertical-align" href="index.html">
-			  <img src="{{ url_for('img', filename = 'logo.png') }}" alt="">  
+			  <img src="{{ url_for('static', filename = 'img/logo.png') }}" alt="">  
 			</a>
 			  <div class="nav-list" id="mainNavbarCollapse">
 				<ul class="nav navbar-nav pull-lg-right">
@@ -67,7 +67,7 @@
     
      <section class="full-height-baner">
       <div class="empty-sp-lg-0 empty-sp-md-100 empty-sp-sm-80 empty-sp-xs-80"></div> 
-       <div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url_for('img', filename = 'header.jpg')"></div>    
+       <div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url_for('static', filename = 'img/header.jpg')"></div>    
          <div class="main-baner vertical-align fix-header-align">
              <div class="container">
                 <div class="title-style-1">
@@ -85,7 +85,7 @@
                          <hr/>
                      </div>
                      <div class="empty-sp-md-80 empty-sp-sm-50 empty-sp-xs-30"></div>
-                     <img src="{{ url_for('img', filename = 'device.png') }}" alt="" class="img-full">
+                     <img src="{{ url_for('static', filename = 'img/device.png') }}" alt="" class="img-full">
                 </div>
              </div>
         </div>
@@ -192,7 +192,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-hourglass-1"></i>  
                                      </div>
@@ -207,7 +207,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-lightbulb"></i>   
                                      </div>
@@ -224,7 +224,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-dropbox"></i>  
                                      </div>
@@ -239,7 +239,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-beaker"></i>  
                                      </div>
@@ -256,7 +256,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 zoomIn wow">
                            <div class="image text-center">
-                               <img src="{{ url_for('img', filename = 'team.png') }}" alt="" class="img-full">
+                               <img src="{{ url_for('static', filename = 'img/team.png') }}" alt="" class="img-full">
                            </div>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-hourglass-1"></i>  
                                      </div>
@@ -282,7 +282,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-lightbulb"></i>   
                                      </div>
@@ -299,7 +299,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-dropbox"></i>  
                                      </div>
@@ -314,7 +314,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-beaker"></i>  
                                      </div>
@@ -331,7 +331,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 zoomIn wow">
                            <div class="image text-center">
-                               <img src="{{ url_for('img', filename = 'team.png') }}" alt="" class="img-full">
+                               <img src="{{ url_for('static', filename = 'img/team.png') }}" alt="" class="img-full">
                            </div>
                         </div>
                     </div>
@@ -342,7 +342,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-hourglass-1"></i>  
                                      </div>
@@ -357,7 +357,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-lightbulb"></i>   
                                      </div>
@@ -374,7 +374,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-dropbox"></i>  
                                      </div>
@@ -389,7 +389,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                   <div class="item-icon type-3">
-                                    <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                    <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                      <div class="icon">
                                        <i class="icon-beaker"></i>  
                                      </div>
@@ -406,7 +406,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 zoomIn wow">
                            <div class="image text-center">
-                               <img src="{{ url_for('img', filename = 'team.png') }}" alt="" class="img-full">
+                               <img src="{{ url_for('static', filename = 'img/team.png') }}" alt="" class="img-full">
                            </div>
                         </div>
                     </div>
@@ -417,7 +417,7 @@
                          <div class="row">
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-hourglass-1"></i>  
                                   </div>
@@ -432,7 +432,7 @@
                              </div>
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-lightbulb"></i>   
                                   </div>
@@ -449,7 +449,7 @@
                          <div class="row">
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-dropbox"></i>  
                                   </div>
@@ -464,7 +464,7 @@
                              </div>
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-beaker"></i>  
                                   </div>
@@ -481,7 +481,7 @@
                      </div>
                      <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 zoomIn wow">
                         <div class="image text-center">
-                            <img src="{{ url_for('img', filename = 'team.png') }}" alt="" class="img-full">
+                            <img src="{{ url_for('static', filename = 'img/team.png') }}" alt="" class="img-full">
                         </div>
                      </div>
                  </div>
@@ -492,7 +492,7 @@
                          <div class="row">
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-hourglass-1"></i>  
                                   </div>
@@ -507,7 +507,7 @@
                              </div>
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-lightbulb"></i>   
                                   </div>
@@ -524,7 +524,7 @@
                          <div class="row">
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-dropbox"></i>  
                                   </div>
@@ -539,7 +539,7 @@
                              </div>
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-beaker"></i>  
                                   </div>
@@ -556,7 +556,7 @@
                      </div>
                      <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 zoomIn wow">
                         <div class="image text-center">
-                            <img src="{{ url_for('img', filename = 'team.png') }}" alt="" class="img-full">
+                            <img src="{{ url_for('static', filename = 'img/team.png') }}" alt="" class="img-full">
                         </div>
                      </div>
                  </div>
@@ -567,7 +567,7 @@
                          <div class="row">
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-hourglass-1"></i>  
                                   </div>
@@ -582,7 +582,7 @@
                              </div>
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-lightbulb"></i>   
                                   </div>
@@ -599,7 +599,7 @@
                          <div class="row">
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-dropbox"></i>  
                                   </div>
@@ -614,7 +614,7 @@
                              </div>
                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                <div class="item-icon type-3">
-                                 <div class="bg" style="background-image:url_for('img', filename = 'team1.png')"></div>
+                                 <div class="bg" style="background-image:url_for('static', filename = 'img/team1.png')"></div>
                                   <div class="icon">
                                     <i class="icon-beaker"></i>  
                                   </div>
@@ -631,7 +631,7 @@
                      </div>
                      <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 zoomIn wow">
                         <div class="image text-center">
-                            <img src="{{ url_for('img', filename = 'team.png') }}" alt="" class="img-full">
+                            <img src="{{ url_for('static', filename = 'img/team.png') }}" alt="" class="img-full">
                         </div>
                      </div>
                  </div>
@@ -656,8 +656,8 @@
                          </div>
                          <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
                             <div class="folow type-3">
-                                <a href="#" target="_blank"><img src="{{ url_for('img', filename = 'grafana.png') }}" width="43px" height="40px"/></a>
-                                <a href="#" target="_blank"><img src="{{ url_for('img', filename = 'influxdb.png') }}" width="43px" height="40px"/></a>
+                                <a href="#" target="_blank"><img src="{{ url_for('static', filename = 'img/grafana.png') }}" width="43px" height="40px"/></a>
+                                <a href="#" target="_blank"><img src="{{ url_for('static', filename = 'img/influxdb.png') }}" width="43px" height="40px"/></a>
                             </div>
                       </div>        
                       <div class="empty-sp-lgx-0 empty-sp-lg-50 empty-sp-md-50 empty-sp-sm-50 empty-sp-xs-50"></div>    
@@ -673,7 +673,7 @@
                <div class="col-md-12">
                    <div class="footer-center-content">
                        <div class="logo-footer">
-                          <a href="#"><img src="{{ url_for('img', filename = 'logo.png') }}" alt="" height="100px"></a>
+                          <a href="#"><img src="{{ url_for('static', filename = 'img/logo.png') }}" alt="" height="100px"></a>
                        </div>    
                        <ul class="nav-footer" style="margin-top: 4%;">
                            <li><a href="#">Home </a></li>
@@ -702,12 +702,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>	 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="{{ url_for('js', filename = 'jarallax.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('js', filename = 'jquery.countTo.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('js', filename = 'wow.min.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('js', filename = 'jscolor.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('js', filename = 'color-piker.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('js', filename = 'all.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/jarallax.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery.countTo.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/wow.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/jscolor.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/color-piker.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/all.js') }}"></script>
 </body>
 </html>	     
      
