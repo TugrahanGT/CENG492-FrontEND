@@ -45,21 +45,18 @@
 			<button class="navbar-toggler pull-xs-right mobile-menu col-style-1" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
 			    <i class="vertical-align"></i>
 			</button>
-			<a class="navbar-brand vertical-align" href="index.html">
+			<a class="navbar-brand vertical-align" href="{{ url_for('index.html') }}">
 			  <img src="{{ url_for('static', filename = 'img/logo.png') }}" alt="">  
 			</a>
 			  <div class="nav-list" id="mainNavbarCollapse">
 				<ul class="nav navbar-nav pull-lg-right">
 					<li class="nav-item drop-link">
-						<a class="nav-link active" href="index.html">Home</a>
-					</li>
-					<li class="nav-item drop-link">
-                        <a class="nav-link" href="#">Team</a>
+						<a class="nav-link active" href="{{ url_for('index.html') }}">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="{{ url_for('index.html') }}">Contact</a>
 					</li>
-                  </ul>
+        </ul>
 			  </div>
 	     </nav>
 	   </div>   
@@ -75,7 +72,7 @@
                     <div class="empty-sp-sm-5 empty-sp-xs-5"></div>
                      <div class="simple-text size-2 color-1">
                          <hr/>
-                         <h3 class="caption-4 size-1 color-1"> What is our aim? </h3>
+                         <h3 class="caption-4 size-1 color-1"> What do we do? </h3>
                          <hr/>
                          <p>To address the increased vulnerabilities to cyber attacks and data breaches caused by the rapid increase in IoT devices, 
                             Deep Learning methods can be employed. DIONA is a solution that closely observes network traffic between IoT devices and 
@@ -85,7 +82,6 @@
                          <hr/>
                      </div>
                      <div class="empty-sp-md-80 empty-sp-sm-50 empty-sp-xs-30"></div>
-                     <img src="{{ url_for('static', filename = 'img/device.png') }}" alt="" class="img-full">
                 </div>
              </div>
         </div>
